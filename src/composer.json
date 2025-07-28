@@ -5,7 +5,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Jotape\\FluentLaravelQueryFilter\\": "src/"
+            "Jotape\\FluentLaravelQueryFilter\\": "src/",
+            "Test\\FluentLaravelQueryFilter\\": "tests/"
         }
     },
     "authors": [
