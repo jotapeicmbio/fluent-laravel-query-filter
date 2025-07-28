@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/development/Dockerfile
+      args:
+        - CUSTOM_UID=${CUSTOM_UID}
+        - CUSTOM_USER=${CUSTOM_USER}
+    volumes:
+      - ./src:/var/www/html
+    tty: true

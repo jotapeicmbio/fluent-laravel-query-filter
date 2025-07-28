@@ -1,0 +1,23 @@
+{
+    "name": "jotape/fluent-laravel-query-filter",
+    "description": "fluent class to laravel query filter",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jotape\\FluentLaravelQueryFilter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "João Pedro Garcia",
+            "email": "joao.garcia.bolsista@icmbio.gov.br"
+        },
+        {
+            "name": "Marcio Bastos",
+            "email": "marcio.bastos.bolsista@icmbio.gov.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
