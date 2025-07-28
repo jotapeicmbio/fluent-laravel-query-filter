@@ -3,7 +3,7 @@ FROM php:8.2-cli
 ARG CUSTOM_USER
 ARG CUSTOM_UID
 
-# Instala extensões e dependências necessárias para Laravel + Orchestra Testbench
+# Instala extensões e dependências necessárias para Laravel + Orchestra Testbench + SQLite
 RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     zip \
@@ -11,10 +11,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libzip-dev \
     libonig-dev \
     libxml2-dev \
+    sqlite3 \
+    libsqlite3-dev \
  && docker-php-ext-install \
     mbstring \
     xml \
     zip \
+    pdo \
+    pdo_sqlite \
  && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Copia o Composer da imagem oficial
