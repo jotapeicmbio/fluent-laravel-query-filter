@@ -7,5 +7,5 @@ services:
         - CUSTOM_UID=${CUSTOM_UID}
         - CUSTOM_USER=${CUSTOM_USER}
     volumes:
-      - ./src:/var/www/html
+      - ./package:/var/www/html
     tty: true
